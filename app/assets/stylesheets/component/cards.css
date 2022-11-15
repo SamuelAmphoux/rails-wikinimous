@@ -1,0 +1,49 @@
+.create_card {
+  background-color: #63ADF2;
+  width: 160px;
+  height: 40px;
+  color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.create_card a {
+  text-decoration: none;
+  color: white;
+}
+
+.create_card :nth-child(2) {
+  height: 15px;
+  width: 15px;
+}
+
+.article_card {
+  background-color: #525B76;
+  margin: 8px 0 8px 0;
+  border-radius: 4px;
+  text-decoration: none;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.article_card dd {
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.link {
+  color: white;
+  font-family: 'Kalam', cursive;
+}
+
+.show_card {
+  background-color: #525B76;
+  text-align: center;
+  border-radius: 4px;
+  padding: 4px;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  color: white;
+}

@@ -1,0 +1,15 @@
+<div class="container">
+<h1>Articles Show</h1>
+
+<div class="show_card">
+<h3><%= @article.title %></h3>
+<p><%= @article.content %></p>
+</div>
+
+<%= link_to "Edit this article", edit_article_path %>
+<%= link_to "Delete",
+  article_path(@article),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
+<%=  link_to "Back to Index", articles_path %>
+</div>

@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Articles index</h1>
+
+  <dl>
+    <% @articles.each do |article| %>
+      <%= link_to article_path(article), class:"no_deco" do %>
+        <div class="article_card">
+          <dt class="link"><%= article.title %></dt>
+          <dd class="link"><%= article.content %></dd>
+        </div>
+      <% end %>
+    <% end %>
+  </dl>
+
+  <div class="create_card">
+  <%= link_to "Create an article", new_article_path %>
+  <a href="/articles/new">
+    <i class="fa-solid fa-square-plus" ></i>
+  </a>
+  </div>
+</div>
